@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Estudiante</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" href="./icons/icon.png" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="principal">
+      <h1>Subir Archivos</h1>
+
+      <!-- <form action="" id="form_subir"> -->
+      <div class="form-1-2">
+        <label for="">Archivo a subir:</label>
+        <input type="file" id="fileUpload" onchange="readText(event)" />
+        <pre id="output"></pre>
+        <span></span>
+      </div>
+
+      <div class="barra">
+        <div class="barra_azul" id="barra_estado">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="acciones">
+        <script src="js/main.js"></script>
+        <button onclick="sendData()" class="btn" value="Enviar">Enviar</button>
+        <input type="button" class="cancel" id="cancelar" value="Cancelar" />
+      </div>
+      <!-- </form> -->
+      <button
+        onclick="window.location.href='index.html'"
+        class="btn btn-primary"
+      >
+        Regresar
+      </button>
+    </div>
+
+    <script src="js/hash.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

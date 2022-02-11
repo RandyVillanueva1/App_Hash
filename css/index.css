@@ -1,0 +1,154 @@
+body {
+    width: 100%;
+    height: 25%;
+    position: fixed;
+    background-color:#fff;
+  }
+  .content {
+    width: 237px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Muli';
+    color: #000;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -118px;
+  }
+  .content:before {
+    content: '[';
+    position: absolute;
+    left: -40px;
+    line-height: 40px;
+  }
+  .content:after {
+    content: ']';
+    position: absolute;
+    right: -83px;
+    line-height: 40px;
+  }
+  .content:after,
+  .content:before {
+    color: #00a9dd;
+    font-size: 42px;
+    animation: 2s linear 0s normal none infinite opacity;
+    -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+    -moz-animation: 2s ease-out 0s normal none infinite opacity;
+    -o-animation: 2s ease-out 0s normal none infinite opacity;
+  }
+  .visible {
+    float: left;
+    font-weight: 300;
+    overflow: hidden;
+    height: 40px;
+  }
+  p {
+    display: inline;
+    float: left;
+    margin: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
+  }
+  ul {
+    margin-top: 500;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    animation: 15s linear 0s normal none infinite change;
+    -webkit-animation: 15s linear 0s normal none infinite change;
+    -moz-animation: 15s linear 0s normal none infinite change;
+    -o-animation: 15s linear 0s normal none infinite change;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
+}
+  ul li {
+    line-height: 40px;
+    margin: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
+  }
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -40px;
+    }
+    40% {
+      margin-top: -40px;
+    }
+    50% {
+      margin-top: -80px;
+    }
+    65% {
+      margin-top: -80px;
+    }
+    75% {
+      margin-top: -40px;
+    }
+    85% {
+      margin-top: -40px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  @keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -40px;
+    }
+    40% {
+      margin-top: -40px;
+    }
+    50% {
+      margin-top: -80px;
+    }
+    65% {
+      margin-top: -80px;
+    }
+    75% {
+      margin-top: -40px;
+    }
+    85% {
+      margin-top: -40px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  button {
+      color: #00a9dd;
+      size: 15px;
+
+  }
